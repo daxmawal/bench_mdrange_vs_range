@@ -26,9 +26,11 @@ build_directory=$1
 output_file=$2
 shift 2
 
-if ! module restore amd_rocm72; then
-  echo "No module collection named 'amd_rocm72'; continuing with current modules." >&2
-fi
+module purge
+module load gmake/4.4.1
+module load cmake/4.0.3
+module load rocm/6.4.3
+module load craype-accel-amd-gfx90a
 module list
 
 cd "${SLURM_SUBMIT_DIR}"

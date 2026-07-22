@@ -3,7 +3,7 @@
 #SBATCH --job-name=range-vs-mdrange
 #SBATCH --constraint=MI300
 #SBATCH --nodes=1
-#SBATCH --account=cad14545
+#SBATCH --account=cad16293
 #SBATCH --ntasks=1
 #SBATCH --ntasks-per-node=1
 #SBATCH --gres=gpu:1
